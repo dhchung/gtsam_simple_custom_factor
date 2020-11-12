@@ -12,9 +12,6 @@ namespace custom_node{
     State(double xi, double yi, double zi):
                x(xi), y(yi), z(zi){}
     };
-
-
-
 }
 
 namespace gtsam{
@@ -55,8 +52,8 @@ namespace gtsam{
         static custom_node::State Retract(const custom_node::State& origin,
                                                     const TangentVector& v){
             return custom_node::State(origin.x+v(0),
-                                            origin.y+v(1),
-                                            origin.z+v(2));
+                                      origin.y+v(1),
+                                      origin.z+v(2));
         }
     };
 }
