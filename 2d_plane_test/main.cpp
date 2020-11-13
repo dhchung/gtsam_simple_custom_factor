@@ -11,13 +11,13 @@
 #include <iterator>
 #include <math.h>
 
-#include "custom_node.h"
+#include "custom_node_2d.h"
 #include "odom_factor2d.h"
-#include "depth_factor.h"
+#include "plane_factor.h"
 
 using namespace std;
 using namespace gtsam;
-using namespace custom_node;
+using namespace custom_node_2d;
 
 int main(){
     NonlinearFactorGraph graph;

@@ -9,13 +9,13 @@
 using namespace gtsam;
 using namespace custom_node_2d;
 
-class OdomFactor2D : public NoiseModelFactor2<State2D, State2D>{
+class PlaneFactor : public NoiseModelFactor2<State2D, State2D>{
 
 private:
     Vector3 measured_;
 
 public:
-    OdomFactor2D(Key key1, Key key2,
+    PlaneFactor(Key key1, Key key2,
                  const Vector3 measured, const SharedNoiseModel & model = nullptr);
     Vector evaluateError(const State2D& s1, const State2D& s2,
                          boost::optional<Matrix&> H1 = boost::none,

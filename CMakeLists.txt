@@ -40,8 +40,6 @@ target_link_libraries(application
                       gtsam
                       Eigen3::Eigen)
 
-
-
 target_link_libraries(tests
                       gtsam
                       Eigen3::Eigen)
