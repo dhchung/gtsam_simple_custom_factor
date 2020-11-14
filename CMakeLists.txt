@@ -4,6 +4,7 @@ project(testing_gtsam)
 
 set(SOURCE "src/main.cpp")
 set(TEST_SOURCE "test/main.cpp")
+set(PLANE_TEST_SOURCE "2d_plane_test/main.cpp")
 
 file(GLOB CLASS_SOURCES
      "classes/*.cpp"
@@ -35,7 +36,6 @@ add_executable(tests
                ${TEST_SOURCE}
                ${CLASS_SOURCES})
 
-               
 target_link_libraries(application
                       gtsam
                       Eigen3::Eigen)

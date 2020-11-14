@@ -36,7 +36,7 @@ Vector PlaneFactor::evaluateError(const State2D& s1, const State2D& s2,
 
 
     Vector3 result;
-    result.segment(0,2) = estimation_n - measured_.segment(0,2);
+    result.segment(0,1) = estimation_n - measured_.segment(0,1);
     result(2) = estimation_d - measured_(2);
     
     return result;
